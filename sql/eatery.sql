@@ -1,19 +1,18 @@
 #用户信息
 CREATE TABLE eatery_user(
   uid INT PRIMARY KEY AUTO_INCREMENT,
-  uname VARCHAR(32),
-  upwd VARCHAR(32),
-  email VARCHAR(64),
-  phone VARCHAR(16),
-
+  uname VARCHAR(128),
+  upwd VARCHAR(128),
+  email VARCHAR(128),
+  phone VARCHAR(128),
   avatar VARCHAR(128),        #头像图片路径
-  user_name VARCHAR(32),      #用户名，如王小明
+  user_name VARCHAR(128),      #用户名，如王小明
   gender INT                  #性别  0-女  1-男
 );
 #美食分类
 CREATE TABLE eatery_cate_family(
   fid INT PRIMARY KEY AUTO_INCREMENT,
-  fname VARCHAR(32)
+  fname VARCHAR(128)
 );
 #美食信息
 CREATE TABLE eatery_cate(
@@ -61,14 +60,6 @@ CREATE TABLE eatery_receiver_address(
   tag VARCHAR(16),            #标签名
 
   is_default BOOLEAN          #是否为当前用户的默认收货地址
-);
-#购物车条目
-CREATE TABLE eatery_shoppingCart_item(
-  iid INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT,      #用户编号
-  product_id INT,   #商品编号
-  count INT,        #购买数量
-  is_checked BOOLEAN #是否已勾选，确定购买
 );
 #用户订单
 CREATE TABLE eatery_order(
@@ -248,15 +239,7 @@ insert into eatery_receiver_address values
 (null,null,'xiaomsdsdg','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true),
 (null,null,'xiasdsdng','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true),
 (null,null,'xidfdfing','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true);
-#购物车条目
-insert into eatery_shoppingcart_item values
-(null,null,'001','2',true),
-(null,null,'002','2',true),
-(null,null,'003','2',true),
-(null,null,'004','2',true),
-(null,null,'005','2',true),
-(null,null,'006','2',true),
-(null,null,'007','2',true);
+
 #用户订单
 insert into eatery_order values
 (null,'007','002289','2'),
