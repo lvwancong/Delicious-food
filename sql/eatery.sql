@@ -1,4 +1,4 @@
-/**用户信息**/
+#用户信息
 CREATE TABLE eatery_user(
   uid INT PRIMARY KEY AUTO_INCREMENT,
   uname VARCHAR(32),
@@ -10,12 +10,12 @@ CREATE TABLE eatery_user(
   user_name VARCHAR(32),      #用户名，如王小明
   gender INT                  #性别  0-女  1-男
 );
-/**美食分类**/
+#美食分类
 CREATE TABLE eatery_cate_family(
   fid INT PRIMARY KEY AUTO_INCREMENT,
   fname VARCHAR(32)
 );
-/**美食信息**/
+#美食信息
 CREATE TABLE eatery_cate(
   cid INT PRIMARY KEY AUTO_INCREMENT,
   family_id INT,              #所属型号家族编号
@@ -29,7 +29,7 @@ CREATE TABLE eatery_cate(
   sold_count INT,             #已售出的数量
   is_onsale BOOLEAN           #是否促销中
 );
-/**美食图片**/
+#美食图片
 CREATE TABLE eatery_cate_pic(
   pid INT PRIMARY KEY AUTO_INCREMENT,
   cate_id INT,		      #美食类别编号
@@ -37,7 +37,7 @@ CREATE TABLE eatery_cate_pic(
   md VARCHAR(128),            #中图片路径
   lg VARCHAR(128)             #大图片路径
 );
-/**logo商标**/
+#logo商标
 create table eatery_logo(
   lid INT PRIMARY KEY AUTO_INCREMENT,
   logo varchar(128),    #logo 商标
@@ -46,7 +46,7 @@ create table eatery_logo(
   directionOfIndication varchar(128), #directionOfIndication  指示方向
   bgimage varchar(128)      #背景图片
 );
-/**收货地址信息**/
+#收货地址信息
 CREATE TABLE eatery_receiver_address(
   aid INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT,                #用户编号
@@ -62,7 +62,7 @@ CREATE TABLE eatery_receiver_address(
 
   is_default BOOLEAN          #是否为当前用户的默认收货地址
 );
-/**购物车条目**/
+#购物车条目
 CREATE TABLE eatery_shoppingCart_item(
   iid INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT,      #用户编号
@@ -70,14 +70,14 @@ CREATE TABLE eatery_shoppingCart_item(
   count INT,        #购买数量
   is_checked BOOLEAN #是否已勾选，确定购买
 );
-/**用户订单**/
+#用户订单
 CREATE TABLE eatery_order(
    oid INT PRIMARY KEY AUTO_INCREMENT,
    order_id INT,           #订单编号
    product_id INT,         #产品编号
    count INT               #购买数量
 );
-/**用户订单详情**/
+#用户订单详情
 CREATE TABLE eatery_order_detail(
   did INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT,
@@ -88,14 +88,14 @@ CREATE TABLE eatery_order_detail(
   deliver_time BIGINT,    #发货时间
   received_time BIGINT    #签收时间
 )AUTO_INCREMENT=10000000;
-/*****用户推荐********/
+#***用户推荐******
 CREATE TABLE eatery_recommend(
    rid INT PRIMARY KEY AUTO_INCREMENT,
    name VARCHAR(128),           #推荐名称
    source VARCHAR(128),         #推荐来源
    introduce VARCHAR(128)      #推荐介绍
 );
-/****标签页内容LabelContent*****/
+#**标签页内容LabelContent***
 CREATE TABLE eatery_LabelContent(
    Lid INT PRIMARY KEY AUTO_INCREMENT,
    Lname int,      #分类
@@ -106,7 +106,7 @@ CREATE TABLE eatery_LabelContent_pic(
   pname int,       #分类
   name VARCHAR(128)           #标签名字
 );
-/***美食菜谱菜单eatery_gourmet_menu*****/
+#*美食菜谱菜单eatery_gourmet_menu***
 CREATE TABLE eatery_gourmet_menu(
   gid INT PRIMARY KEY AUTO_INCREMENT,
   gurl varchar(128), #商品详情路径
@@ -114,14 +114,14 @@ CREATE TABLE eatery_gourmet_menu(
   people varchar(128),    #商品推荐人
   purl varchar(128)#商品图片路径
 );
-/***时令食材SeasonalIngredients***/
+#*时令食材SeasonalIngredients*
 CREATE TABLE eatery_SeasonalIngredients(
   sid INT PRIMARY KEY AUTO_INCREMENT,
   sname varchar(128),    #食材名称
   speople varchar(128),    #食材推荐人
   surl varchar(128)#食材图片路径
 );
-/**话题日志TopicLog**/
+#话题日志TopicLog
 CREATE TABLE eatery_TopicLog(
   tid INT PRIMARY KEY AUTO_INCREMENT,
   tname varchar(128),     #食材推荐人名称
@@ -132,7 +132,7 @@ CREATE TABLE eatery_TopicLog(
   tlogo varchar(128),     #食材推荐人头像
   turl varchar(128)       #食材图片路径
 );
-/***话题加精***/
+#*话题加精*
 CREATE TABLE eatery_TopicLog_pic(
   toid INT PRIMARY KEY AUTO_INCREMENT,
   topic varchar(128),     #加精分类
@@ -140,10 +140,10 @@ CREATE TABLE eatery_TopicLog_pic(
   topeople varchar(128),  #食材推荐人
   tourl varchar(128)      #食材图片路径
 );
-/*******************/
-/******数据导入******/
-/*******************/
-/**美食分类**/
+#***************
+#****数据导入****
+#***************
+#美食分类
 INSERT INTO eatery_cate_family VALUES
 (NULL,'自助餐'),
 (NULL,'海鲜'),
@@ -155,7 +155,7 @@ INSERT INTO eatery_cate_family VALUES
 (NULL,'素食'),
 (NULL,'汤'),
 (NULL,'西餐');
-/**美食信息**/
+#美食信息
 INSERT INTO eatery_cate VALUES
 (null,1,null,null,12,null,null,null,'20180201',25,true),
 (null,1,null,null,12,null,null,null,'20180201',25,true),
@@ -187,7 +187,7 @@ INSERT INTO eatery_cate VALUES
 (null,10,null,null,12,null,null,null,'20180201',25,true),
 (null,10,null,null,12,null,null,null,'20180201',25,true),
 (null,10,null,null,12,null,null,null,'20180201',25,true);
-/**美食图片**/
+#美食图片
 INSERT INTO eatery_cate_pic VALUES
 (null,1,null,null,null),
 (null,1,null,null,null),
@@ -224,14 +224,14 @@ INSERT INTO eatery_cate_pic VALUES
 (null,10,null,"../img/NavigationPage/NavigationPage01.jpg",null),
 (null,10,null,"../img/NavigationPage/NavigationPage02.jpg",null),
 (null,10,null,"../img/NavigationPage/NavigationPage03.png",null);
-/**logo商标**/
+#logo商标
 INSERT INTO eatery_logo values
 (null,"../img/logo/logo.png","../img/search/search.png","../img/Optionbaricon/caipu.png","../img/directionOfIndication/svg02-copy.png","../img/background/login.jpg"),
 (null,null,null,"../img/Optionbaricon/shicai.png",null,null),
 (null,null,null,"../img/Optionbaricon/yinshijiankang.png",null,null),
 (null,null,null,"../img/Optionbaricon/zhuanti.png",null,null),
 (null,null,null,"../img/Optionbaricon/dianzan.png",null,null);
-/**用户信息**/
+#用户信息
 INSERT INTO eatery_user VALUES
 (NULL, 'dingding', '123456', 'ding@qq.com', '13501234567', 'img/avatar/default.png', '丁伟', '1'),
 (NULL, 'dangdang', '123456', 'dang@qq.com', '13501234568', 'img/avatar/default.png', '林当', '1'),
@@ -239,7 +239,7 @@ INSERT INTO eatery_user VALUES
 (NULL, 'yaya', '123456', 'ya@qq.com', '13501234560', 'img/avatar/default.png', '秦小雅', '0'),
 (NULL, 'yaya', '123456', 'ya@qq.com', '13501234560', 'img/avatar/default.png', '秦小雅', '0'),
 (NULL, 'yaya', '123456', 'ya@qq.com', '13501234560', 'img/avatar/default.png', '秦小雅', '0');
-/**收货地址信息**/
+#收货地址信息
 insert into eatery_receiver_address values
 (null,null,'xiaoming','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true),
 (null,null,'xiaosdsdg','河南省','南阳市','兰考县','胜利路225号','14012563655','03712555','123456',null,true),
@@ -248,7 +248,7 @@ insert into eatery_receiver_address values
 (null,null,'xiaomsdsdg','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true),
 (null,null,'xiasdsdng','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true),
 (null,null,'xidfdfing','河南省','郑州市','兰考县','北京五道口','14012563655','03712555','123456',null,true);
-/**购物车条目**/
+#购物车条目
 insert into eatery_shoppingcart_item values
 (null,null,'001','2',true),
 (null,null,'002','2',true),
@@ -257,7 +257,7 @@ insert into eatery_shoppingcart_item values
 (null,null,'005','2',true),
 (null,null,'006','2',true),
 (null,null,'007','2',true);
-/**用户订单**/
+#用户订单
 insert into eatery_order values
 (null,'007','002289','2'),
 (null,'007','0022819','2'),
@@ -266,7 +266,7 @@ insert into eatery_order values
 (null,'007','00226','2'),
 (null,'007','0022879','2'),
 (null,'007','0022859','2');
-/**用户订单详情**/
+#用户订单详情
 insert into eatery_order_detail values
 (null,null,null,1,'20180201','20180222','20180215','20180222'),
 (null,null,null,2,'20180201','20180222','20180215','20180222'),
@@ -274,7 +274,7 @@ insert into eatery_order_detail values
 (null,null,null,4,'20180201','20180222','20180215','20180222'),
 (null,null,null,5,'20180201','20180222','20180215','20180222');
 
-/**用户推荐**/
+#用户推荐
 insert into eatery_recommend values
 (null,'腊月二十九，来过油','小美的菜单  ','腊月二十九在民间被称为“小除夕”，也叫“过赶年”，这一天做各种炸物的习俗。'),
 (null,"地方传统特色美食","泡泡鱼的菜单  ","博大精深的中国传统饮食，应该被很好地记录和记得，这些食物或许鲜为人知，但却独具特色！"),
@@ -288,7 +288,7 @@ insert into eatery_recommend values
 (null,"如何消灭冰箱“囤货”？","疯兔天苹的菜单    ","过年少不了一桌又一桌的丰盛大餐。酒足饭饱之后，冰箱里剩饭剩菜怎么办？不如换个花样试试看！"),
 (null,"春节家宴：五福临门","小美的菜单    ","新年来道吉祥菜“五福临门”，在新的一年里，希望大家在生活中幸福美满，五福临门。"),
 (null,"春节家宴：花开富贵","小美的菜单    ","花开富贵代表了人们对美满幸福生活富有和高贵的向往。新的一年祝大家工作与生活中和和美美，花开富贵。");
-/*****标签页内容eatery_LabelContent***/
+#***标签页内容eatery_LabelContent*
 insert into eatery_LabelContent values
 (null,1,"春日美容排毒，吃出好皮肤"),
 (null,1,"春季养生汤，滋补又养颜"),
@@ -346,7 +346,7 @@ insert into eatery_LabelContent_pic values
 (null,2,"派塔"),
 (null,2,"中式糕点"),
 (null,2,"酥");
-/***美食菜谱菜单eatery_gourmet_menu*****/
+#*美食菜谱菜单eatery_gourmet_menu***
 insert into eatery_gourmet_menu values
 (null,null,"杂粮荠菜包","线线3896"," ../img/cate/Menu/zaliangjiecaibao.jpg"),
 (null,null,"腐竹火腿黄瓜片","hb俗人"," ../img/cate/Menu/fuzhuhuotuihuangguapian.jpg"),
@@ -730,7 +730,7 @@ insert into eatery_gourmet_menu values
 (null,null,"李子果泥","健康料理","../img/cate/Menu/c640_201509141442193565412.jpg");
 
 
-/***时令食材SeasonalIngredients***/
+#*时令食材SeasonalIngredients*
 insert into eatery_SeasonalIngredients values
 (null,"白萝卜","赛人参","../img/cate/SeasonalIngredients/bailuobo.jpg"),
 (null,"南瓜","有点小黄","../img/cate/SeasonalIngredients/nangua.jpg"),
@@ -747,7 +747,7 @@ insert into eatery_SeasonalIngredients values
 (null,"鸡翅","老少通吃","../img/cate/SeasonalIngredients/jichi.jpg"),
 (null,"排骨","可记得吮指之乐","../img/cate/SeasonalIngredients/paigu.jpg");
 
-/**话题日志TopicLog**/
+#话题日志TopicLog
 insert into eatery_TopicLog values
 (null,"朱朱_ZCar","2小时前","null","3月10日早餐：青菜蛋三明治 芒果酸奶 雪花❄️酥、坚果、西梅、芒果 一个自己做的吐司，一......","6个喜欢，6条评论","../img/cate/theme/HeadPortrait/19_avatar_big.jpg","../img/cate/theme/CommentAreaPhotos/20190310155218096944911049719.jpg"),
 (null,"清水淡竹","17小时前","null","芙蓉鲜蔬汤","4个喜欢，6条评论","../img/cate/theme/HeadPortrait/54_avatar_big.jpg","../img/cate/theme/CommentAreaPhotos/2019030915521282649048451954.jpg"),
@@ -770,7 +770,7 @@ insert into eatery_TopicLog values
 (null,"逝去的爱情","19小时前","2019.3.9女儿下午茶点心","今上海绵绵细雨，呆在家里给女儿做的点心。 美好的一天，从早餐......","4个喜欢，6条评论","../img/cate/theme/HeadPortrait/06_avatar_big.jpg","../img/cate/theme/CommentAreaPhotos/20190309155212080734310454906.jpg"),
 (null,"绿茶_gYGx","2019-3-9","你好，早晨~","煎三文鱼蔬菜沙拉","5个喜欢，8条评论","../img/cate/theme/HeadPortrait/07_avatar_big.jpg","../img/cate/theme/CommentAreaPhotos/20190309155209532944411169007.jpg");
 
-/***话题加精***/
+#*话题加精*
 insert into eatery_TopicLog_pic values
 (null,"【食·色面点】","柑橘胡萝卜炒方便面","食·色","../img/cate/theme/Refining/2019030915520970416939732003.jpg"),
 (null,"【食·色饼干】","浓香花生酥饼","食·色","../img/cate/theme/Refining/2019030815520090421849724956.jpg"),
@@ -793,7 +793,7 @@ insert into eatery_TopicLog_pic values
 (null,"【食·色甜品】","手工红豆沙","食·色","../img/cate/theme/Refining/2019021515501947814889724956.jpg"),
 (null,"【食·色蛋糕】","陈皮佛手风味红茶戚风蛋糕","食·色","../img/cate/theme/Refining/20190214155010828629810138013.jpg");
 
-/***MenuCarousel菜谱首页轮播*****/
+#*MenuCarousel菜谱首页轮播***
 CREATE TABLE eatery_MenuCarousel(
   mcid INT PRIMARY KEY AUTO_INCREMENT,
   mctitle varchar(128),   #文本
@@ -831,7 +831,7 @@ insert into eatery_MenuCarousel values
 (null,"精选15款热卖速溶咖啡","15件商品","../img/cate/Menu/20180531152773757660910104208.jpg"),
 (null,"精选15款热卖棒棒冰","15件商品","../img/cate/Menu/2018053115277542229419732003.jpg");
 
-/***********commonlyUsedTags常用标签*************/
+#*********commonlyUsedTags常用标签***********
 CREATE TABLE eatery_MenuCommonlyUsedTags(
   clid INT PRIMARY KEY AUTO_INCREMENT,
   cltitle varchar(128),   #文本
@@ -861,7 +861,7 @@ insert into eatery_MenuCommonlyUsedTags values
 (null,"悦烘焙",null,"../img/cate/Menu/z10.jpg");
 
 
-/*****************Foodclassificationfamily 食材分类********************/
+#***************Foodclassificationfamily 食材分类******************
 CREATE TABLE eatery_Foodclassificationfamily(
   efid INT PRIMARY KEY AUTO_INCREMENT, #排序
   eftitle varchar(128),   #分类名称
@@ -876,7 +876,7 @@ insert into eatery_Foodclassificationfamily values
 (null,"米面豆乳","共180种"),
 (null,"调味品","共178种"),
 (null,"药食","共80种");
-/****************FoodLabelNavigationPage 食材标签导航页***************/
+#**************FoodLabelNavigationPage 食材标签导航页*************
 CREATE TABLE eatery_FoodLabelNavigationPage(
   fid INT PRIMARY KEY AUTO_INCREMENT, #排序
   efid varchar(128),  #分类名称
@@ -1084,7 +1084,7 @@ insert into eatery_FoodLabelNavigationPage values
 (null,8,"花胶","null"),
 (null,8,"更多","null");
 
-/*******珍品发现尖货 TreasureDiscoveryTopGoods********/
+#*****珍品发现尖货 TreasureDiscoveryTopGoods******
 CREATE TABLE eatery_TreasureDiscoveryTopGoods(
   Tid INT PRIMARY KEY AUTO_INCREMENT, #排序
   Ttitle varchar(128),   #商品名称
@@ -1155,7 +1155,7 @@ insert into eatery_TreasureDiscoveryTopGoods values
 (null,"早餐礼赞——歌颂生活的方式有很多，热爱早餐便是其中一种","24.00","../img/JaneChoose/201603021456911230822.jpg","null"),
 (null,"克洛斯威跳绳正品，专业比赛健身减肥运动","9.90","../img/JaneChoose/201602251456408147757.jpg","null");
 
-/*** HealthyHomeRotation 健康首页轮播*****/
+#* HealthyHomeRotation 健康首页轮播***
 CREATE TABLE eatery_HealthyHomeRotation(
   Hcid INT PRIMARY KEY AUTO_INCREMENT,
   Hctitle varchar(128),   #文本
@@ -1187,7 +1187,7 @@ insert into eatery_HealthyHomeRotation values
 (null,"春季养生食物，这10种别错过！","../img/Healthy/20190320155307115881210138013.jpg",null),
 (null,"生活中降血糖的蔬菜有哪些？","../img/Healthy/20190320155307054785210138013.jpg",null);
 
-/***********HealthRecommendation 健康推荐**********/
+#*********HealthRecommendation 健康推荐********
 CREATE TABLE eatery_HealthRecommendation(
   HRcid INT PRIMARY KEY AUTO_INCREMENT,
   HRctitle varchar(128),   #文本标题
@@ -1318,7 +1318,7 @@ insert into eatery_HealthRecommendation values
 (null,"早餐吃对了，才养胃","要想养好胃，早餐是十分重要的，要养成每天吃早餐的习惯，也要注意早餐应该吃些养胃暖胃的食物。那么早餐吃什么最养胃呢？下面一","2019-2-28",null);
 
 
-/***********special 专题**********/
+#*********special 专题********
 CREATE TABLE eatery_special(
   Hscid INT PRIMARY KEY AUTO_INCREMENT,
   Hsctitle varchar(128),   #文本标题
@@ -1447,8 +1447,8 @@ insert into eatery_special values
 (null,"粑粑的做法大全","../img/special/20180425152464952127810104261.jpg",null),
 (null,"糖饼的做法大全","../img/special/c640_20141226101203765806779.jpg",null);
 
-/*****商品详情页*Commoditydetails*****/
-/**商品照片*Detailsphotos*/
+#***商品详情页*Commoditydetails***
+#商品照片*Detailsphotos*/
 /*Product Details Page Pictures*商品详情页图片*/
 CREATE TABLE eatery_Detailsphotos(
   Deid INT PRIMARY KEY AUTO_INCREMENT,
@@ -1462,7 +1462,7 @@ CREATE TABLE eatery_Detailsphotos(
 insert into eatery_Detailsphotos values
 (null,"乐悠厨房","红烧肉","非常多的人喜欢红烧肉，并把它列为最爱吃的菜之一。其中不乏古今名人，且多为学识渊博者。红烧肉的特点：色泽红亮、口味浓郁、肥而不腻、瘦而不柴、入口软而即化、百吃不厌、老少皆宜。","../img/businesslogo/71_avatar_big.jpg","../img/PDPP/20140513173310595294480.jpg",null);
 
-/**商品材料*Commercialmaterials*/
+#商品材料*Commercialmaterials*/
 CREATE TABLE eatery_Commercialmaterials(
   Coid INT PRIMARY KEY AUTO_INCREMENT,
   Cocategory varchar(128),   #详情类
@@ -1478,7 +1478,7 @@ insert into eatery_Commercialmaterials values
 (null,1,"食材明细","配料","酱油味精","适量",null),
 (null,1,"食材明细","其他","酸咸","口味",null);
 
-/**商品步骤*Practicesteps*/
+#商品步骤*Practicesteps*/
 CREATE TABLE eatery_Practicesteps(
   Prid INT PRIMARY KEY AUTO_INCREMENT,
   Prcategory varchar(128),   #详情类
@@ -1498,7 +1498,7 @@ insert into eatery_Practicesteps values
 (null,1,"红烧肉的做法步骤","7","煨到酥烂的五花肉，放冰糖大火收汁，晃动锅，不要翻动。","../img/PDPP/201111091435309.jpg",null),
 (null,1,"红烧肉的做法步骤","8","到汤汁均匀的裹在肉上就好了！放点味精提味。","../img/PDPP/201111091435415.jpg",null);
 
-/**小窍门*Tips*/
+#小窍门*Tips*/
 CREATE TABLE eatery_Tips(
   Tiid INT PRIMARY KEY AUTO_INCREMENT,
   Ticategory varchar(128),   #详情类
