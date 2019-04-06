@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专题</title>
+    <link rel="stylesheet" href="css/body.css"/>
+    <link rel="stylesheet" href="css/navTop_no_1.css"/>
+    <link rel="stylesheet" href="css/navtop_no_2.css"/>
+    <link rel="stylesheet" href="css/thesamestyle.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/special.css">
+</head>
+<body>
+     <!-- 页面顶端的导航窗口-->
+    <div class="navTop">
+        <ul>
+            <li><a id="l1" href="header.html" title="首页" class="navTop_home_page"></a></li>
+            <li><a href="Menu.html" title="菜谱" class="navTop_menu">菜谱</a></li>
+            <li><a href="Ingredients.html" title="食材" class="navTop_ingredients">食材</a></li>
+            <li><a href="JaneChoose.html" title="珍选" class="navTop_screen">珍选</a></li>
+            <li><a href="Healthy.html" title="健康" class="navTop_healthy">健康</a></li>
+            <li><a href="special.html" title="专题" class="navTop_special">专题</a></li>
+            <li><a href="login.html" title="登录" class="navTop_login">登录</a></li>
+            <li><a href="register.html" title="注册" class="navTop_register">注册</a></li>
+        </ul>
+    </div>
+     <!-- 页面内容的头部导航栏-->
+    <div class="w headerNavBar">
+        <!-- logo-->
+        <div class="headerNavBar_inner left">
+            <a id="l2" href="javascript:void(0);" title="美食天下"></a>
+        </div>
+        <!-- 本页名称--刷新作用-->
+        <div class="logo_current left">
+            <h1><a href="javascript:void(0);" title="专题">专题</a></h1>
+        </div>
+        <!-- 搜索框-->
+        <div class="headerNavBar_search right">
+            <div class="headerNavBar_searchBox">
+                <a id="search" href="javascript:void(0);" title="搜索" class="headerNavBar_searchBtn right">搜索</a>
+                <input type="text" class="headerNavBar_searchText right"/>
+            </div>
+        </div>
+        <!-- 选项列表-->
+        <div class="headerNavBar_nav logo_nav">
+            <a title="专题首页" class="headerNavBar_nav_a on" href="javascript:void(0);">专题首页<i></i><b></b></a>
+            <a title="排行" class="headerNavBar_nav_a" href="javascript:void(0);">排行<i></i><b></b></a>
+            <span style="float: left; height:18px; margin:23px 4px 0; border-right: 1px solid #ddd;"></span>
+            <a title="菜单" class="headerNavBar_nav_a" target="_blank" href="javascript:void(0);">菜单</a>
+            <a class="headerNavBar_nav_a" target="_blank" href="javascript:void(0);" title="清单">清单</a>
+        </div>
+    </div>
+    <!-- 页面内容的头部的子导航栏-->
+    <div class="w nav_wrap2">
+        <ul>
+            <li><a title="全部" class="on" href="javascript:void(0);">全部</a></li>
+            <li><a title="主题美食" href="javascript:void(0);">主题美食</a></li>
+            <li><a title="厨电专题" href="javascript:void(0);">厨电专题</a></li>
+            <li><a title="食材专题" href="javascript:void(0);">食材专题</a></li>
+            <li><a title="经典美食" href="javascript:void(0);">经典美食</a></li>
+            <li><a title="健康美食" href="javascript:void(0);">健康美食</a></li>
+        </ul>
+    </div>
+    <!-- 页面主体内容 -- 商品分页 -->
+    <div class="wrap">
+        <div class="w clear">
+            <div class="zhen_listing_index clear mt10">
+                <ul id="zhen_listing_index_ul"></ul>
+            </div>
+            <div class="ui-page mt10">
+                <div class="ui-page-inner clear">
+                    <a value="1" id="special_wrap_a01" class="now_page">1</a>
+                    <a value="2" id="special_wrap_a02">2</a>
+                    <a value="3" id="special_wrap_a03">3</a>
+                    <a value="4" id="special_wrap_a04">4</a>
+                    <a value="5" id="special_wrap_a05">5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <!-- 返回顶部-->
+    <div id="fixed_footer_min" class="fixed-footer fixed-footer-min" style="left: auto; right: 68px; bottom: 10px;">
+        <a href="javascript:;" title="点击返回页面顶部" onclick="window.scrollTo(0,0);" class="fixed-footer-go" style="display: inline;"></a>
+        <!--scrollTo() 方法可把内容滚动到指定的坐标。-->
+    </div>
+    <!-- 页面底部 -->
+    <!-- 页面底部的链接窗口-->
+    <!-- 页面底部的信息-->
+    <div class="footerInformation clear">
+        <div class="footerInformation_w">
+            <div class="footerInformation_left">
+                <p class="footer_l_p"><a href="javascript:;" title="美食天下 - 让吃更美好">美食天下 - 让吃更美好</a></p>
+                <p class="footer_c_p">
+                    <a href="AboutUs.html#gywm" title="关于我们">关于我们</a>
+                    <a href="AboutUs.html#lxwm" title="联系我们">联系我们</a>
+                    <a href="AboutUs.html#jrwm" title="加入我们">加入我们</a>
+                    <a href="AboutUs.html#fusm" title="服务声明">服务声明</a>
+                    <a href="javascript:;" title="友情链接">友情链接</a>
+                    <a href="AboutUs.html#wzdt" title="网站导图">网站地图</a>
+                    <a href="javascript:;" title="移动应用">移动应用</a>
+                </p>
+                <p class="footer_r_p">&copy; 2004-2019 美食天下 保留所有权利 - 京ICP证090244号</p>
+            </div>
+            <div class="footerInformation_conter">
+                <img class="imgload" id="qrcode1" src="img/footer/weixin_727.png" title="微信公众号"/>
+                微信公众号
+            </div>
+            <div class="footerInformation_right">
+                <img class="imgload" id="qrcode2" src="img/footer/msc_app.png" title="手机客户端">
+                手机客户端
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js-ajax/top_nav-ajax.js"></script>
+<script src="js/body.js"></script>
+<script src="js-ajax/special-ajax.js"></script>
+<script src="js-ajax/special-ajax.js"></script>
+</html>

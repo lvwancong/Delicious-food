@@ -1,0 +1,136 @@
+/*//头部导航补缺*/
+.headerNavBar .logo_current{
+    height: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 10px;
+    padding: 0 0 0 10px;
+}
+.headerNavBar .logo_current a{
+    background: #FF838B;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.headerNavBar .logo_current a:hover {
+    background: #FF6767;
+    text-decoration: none;
+}
+/*** <!-- 页面内容的头部的子导航栏-->***/
+.nav_wrap2 {
+    height: 34px;
+    border-bottom: 1px solid #ff6767;
+    border-top: 1px solid #ff6767;
+    margin: auto;
+    width: 990px;
+}
+.nav_wrap2 li {
+    float: left;
+    padding: 0 10px;
+}
+.nav_wrap2 a {
+    display: block;
+    padding: 0 3px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+}
+.nav_wrap2 a.on {
+    color: #ff6767;
+}
+.nav_wrap2 a:hover {
+    color: #ff6767;
+    text-decoration: none;
+}
+.nav_wrap2 li {
+    float: left;
+    padding: 0 10px;
+}
+.nav_wrap2 .right {
+    float: right;
+    position: relative;
+}
+#navlist .navlist_a {
+    padding: 0 10px;
+    color: #333;
+}
+#navlist .navlist_a b,
+#navlist .navlist_a i {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border: 4px dashed transparent;
+    border-top: 6px solid #333;
+}
+#navlist .navlist_a b {
+    top: 13px;
+    border-top: 6px solid #fff;
+}
+#navlist_sub {
+    background: #fff;
+    width: 990px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    z-index: 50;
+    box-shadow: 0 2px 3px #ddd;
+    display: none;
+    overflow: hidden;
+}
+#navlist_sub div {
+    float: left;
+    width: 15%;
+    margin: 0 0.8%;
+    padding: 0 0 10px;
+}
+#navlist_sub h4 {
+    padding: 15px 3px 0;
+    width: 100%;
+    font-weight: 700;
+    clear: both;
+}
+#navlist_sub ul {
+    float: left;
+    margin: 0 0 10px;
+}
+#navlist_sub li {
+    line-height: 160%;
+    width: 47%;
+    padding: 0;
+}
+#navlist_sub li a {
+    color: #333;
+    font-size: 12px;
+    line-height: 28px;
+    height: 28px;
+}
+#navlist_sub li a:hover {
+    text-decoration: none;
+    color: #ff6767;
+}
+/***********commonlyUsedTags常用标签*************/
+.recipe_index_n10 {
+    padding: 0;
+}
+.recipe_index_n10 a {
+    float: left;
+    width: 99px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+.recipe_index_n10 a img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 5px;
+    background: #f2f2f2 url("../img/logo/logo.png") no-repeat scroll center center;
+    border-radius: 50%;
+}
+/********************************************/

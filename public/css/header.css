@@ -1,0 +1,793 @@
+/********************头部轮播图里的导航栏**************************/
+/*设置导航div外包属性*/
+.box_aside{
+    width: 220px;
+    height: 360px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+    position: absolute;
+}
+/*设置ul的列表样式和行高*/
+.box_aside ul{
+    list-style: none;
+    line-height: 40px;
+}
+.box_aside ul .lilili{
+    display:block;
+    width: 100%;
+}
+.box_aside ul:nth-child(1){
+    padding-top: 20px;
+}
+/*设置a的文本装饰为none,文本居中对齐,显示为块显示*/
+.box_aside a{
+    text-decoration:none;
+    /*这个属性允许对文本设置某种效果，如加下划线。如果后代元素没有自己的装饰，祖先元素上设置的装饰会“延伸”到后代元素中。不要求用户代理支持 blink。*/
+    text-align:center;
+    padding:0 20px;
+    color:#fff;
+    display:block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px auto;
+
+}
+/*设置一级菜单浮动*/
+.box_aside ul li{
+    float:left;
+}
+/*二级菜单默认为不显示*/
+.box_aside ul li ul{
+    position: absolute;
+    display:none;
+    left: 220px;
+    top: 0px;
+    width:400px;
+    height: 360px;
+    /*z-index: 999;*/
+    background:white;
+}
+.box_aside ul li ul li{
+    float:left;
+    display:none;
+    position: relative;
+    /*left: 0px;
+    top: 0px;*/
+}
+/*当鼠标移动到一级菜单时，二级菜单显示*/
+.box_aside ul li:hover li{
+    display:block;
+}
+/*设置a标签背景*/
+.box_aside ul li ul li a{
+    background-color: #fff;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    padding: 20px;
+}
+/*设置一级菜单经过时的背景颜色*/
+.box_aside a:hover{
+    background-color:#000;
+}
+
+/*设置二级菜单经过时的背景颜色*/
+.box_aside ul li ul li a:hover{
+    background-color:#fff;
+    color:#f00;
+
+}
+.box_aside ul li:hover ul{
+    display: block;
+}
+
+
+.box_aside ul li b img{
+    font-weight: 400;
+}
+/*导航菜单的指示方向 与图标*/
+.box_aside ul li b img, .box_aside ul li i img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 20px;
+}
+/*导航菜单的图标*/
+.box_aside ul li i img{
+    margin-top: 15px;
+    padding: 0;
+}
+/*导航菜单的指示方向*/
+.box_aside ul li b img{
+    position: relative;
+    top: -34px;
+    left: 120px;
+}
+/**********************************************/
+/***************静态轮播******************/
+/*最外层*/
+.StaticWheelBroadcasting{
+    position: relative;
+    width: 990px;
+    margin: 10px auto 0;
+    background: #eee;
+    padding: 15px 0;
+}
+
+
+/*轮播区域*/
+.StaticWheelBroadcasting .Static_slider{
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    width: 910px;
+    z-index: 1;
+    margin: auto;
+}
+/*轮播容器*/
+.StaticWheelBroadcasting .Static_slider ul{
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transform: translate(-2122px, 0px);
+    width: 9000000px;
+    height: 100%;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+/*容器样式*/
+.StaticWheelBroadcasting .Static_slider ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    width: 303px;
+    margin: 0;
+}
+.StaticWheelBroadcasting .Static_slider ul li h2 {
+    font-size: 20px;
+    line-height: 1.2em;
+    padding: 0 0 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.StaticWheelBroadcasting .Static_slider ul li.ll h2{
+    padding: 0 29px 8px;
+}
+.StaticWheelBroadcasting .Static_slider ul li span,.StaticWheelBroadcasting .Static_slider ul li p {
+    color: #333;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.StaticWheelBroadcasting .Static_slider ul li.ll span,.StaticWheelBroadcasting .Static_slider ul li.ll p {
+    padding: 0 29px;
+}
+.StaticWheelBroadcasting .Static_slider ul li span{
+    color: #999;
+}
+/*按钮样式*/
+.StaticWheelBroadcasting .control .nextBtn, .StaticWheelBroadcasting .control .prevBtn {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 50%;
+}
+.StaticWheelBroadcasting .control .nextBtn i, .StaticWheelBroadcasting .control .prevBtn i {
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    margin: 4.5px 9px;
+}
+.StaticWheelBroadcasting:hover .control .pbtn{
+    opacity:1;
+    z-index: 1000;
+}
+/*右*/
+.StaticWheelBroadcasting .nextBtn{
+    top: 45px;
+    right: 5px;
+}
+.StaticWheelBroadcasting .nextBtn:hover{
+    background-color: #666;
+}
+/*左*/
+.StaticWheelBroadcasting .prevBtn {
+    top: 45px;
+    left: 5px;
+}
+.StaticWheelBroadcasting .prevBtn:hover{
+    background-color: #666;
+}
+/*******************导航菜单***************************/
+a {
+    color: #333;
+    text-decoration: none;
+}
+.clear {
+     zoom: 1;
+}
+
+img{
+    border: 0;
+    vertical-align: middle;
+     display: block;
+ }
+a.w3a img{
+    width: 310px;
+    height: 124px;
+}
+.La3 {
+    width: 327px;
+    clear: both;
+}
+.La3 a {
+    border: 1px solid #e1e1e1;
+    float: left;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 17px 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+     list-style: none;
+}
+.right {
+     float: right;
+}
+.tuijian li {
+     font-size: 16px;
+     padding: 10px 0 0;
+     line-height: 26px;
+ }
+
+.tuijian li a {
+    display: block;
+    text-decoration: none;
+}
+.tuijian li a:before {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    float: left;
+    height: 5px;
+    margin: 8px 8px 0 2px;
+    vertical-align: middle;
+    width: 5px;
+}
+.tuijian li a:hover:before{
+    border: 2px solid #f00;
+}
+.ui_title {
+    height: 35px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+.ui_title_wrap {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.ui_title_wrap h1, .ui_title_wrap h2, .ui_title_wrap h3 {
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ui_title_wrap a {
+    text-decoration: none;
+}
+.ui_title_wrap h1 a, .ui_title_wrap h2 a, .ui_title_wrap h3 a {
+    color: #666;
+}
+.ui_title_wrap h1.on a, .ui_title_wrap h2.on a, .ui_title_wrap h3.on a {
+    color: #ff6767;
+}
+.ui_title_wrap h1.on, .ui_title_wrap h2.on, .ui_title_wrap h3.on {
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+}
+.ui_title {
+     height: 35px;
+     border-bottom: 1px solid #E8E8E8;
+     position: relative;
+}
+.ui_title_wrap .right {
+    float: right;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+
+.ui_title_wrap {
+    line-height: 30px;
+    font-size: 20px;
+}
+.w3 {
+    width: 990px;
+    height: 400px;
+    margin: 20px auto 0;
+}
+.w3_1 {
+     width: 310px;
+     float: left;
+ }
+.w3_2 {
+      width: 310px;
+      margin: 0 30px;
+      float: left;
+}
+.w3_3 {
+    width: 310px;
+    float: left;
+}
+.w3 .w3a {
+    display: block;
+    padding: 10px 0 0;
+}
+.NavP{
+    width: 310px;
+    height: 350px;
+    overflow: hidden;
+}
+
+/******************商品图样**********************/
+div{
+    display: block;
+}
+a{
+    text-decoration:none;
+}
+.commodityPattern{
+    width: 990px;
+    /*overflow: hidden;*/
+    /*margin: 40px 0 0 0;*/
+    margin: 0 auto;
+    text-align:center;
+}
+.commodityPatternone{
+    height: 35px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+.commodityPatternone .commodityPatternone_nav{
+    line-height: 30px;
+    font-size: 20px;
+    zoom: 1;
+}
+.commodityPatternone_nav h3 {
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.commodityPatternone_nav a {
+    text-decoration: none;
+}
+.commodityPatternone_nav h3 a {
+    text-decoration:none;
+    color: #666;
+}
+.commodityPatternone_nav h3.on {
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+    text-decoration:none;
+}
+.commodityPatternone_nav h3.on a {
+    text-decoration:none;
+    color: #ff6767;
+}
+.right {
+    float: right;
+}
+.commodityPatternone_nav .right{
+    float: right;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+.clear{
+     zoom: 1;
+}
+.clear:after{
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.commodityPatterntwo{
+    width: 100%;
+    margin-top: 10px;
+}
+.commodityPatterntwo ul{
+    display: block;
+    width: 1040px;
+}
+.commodityPattern .commodityPatterntwo ul {
+    display: none;
+}
+.commodityPattern .commodityPatterntwo ul.on{
+    display: block;
+}
+.commodityPatterntwo li{
+    float: left;
+    margin: 0 23px 0 0;
+    text-align: center;
+    width: 230px;
+    height: 305px;
+    overflow: hidden;
+}
+.commodityPatterntwo li a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+.commodityPatterntwo li a i {
+    display: block;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+}
+.commodityPatterntwo li a p {
+    font-size: 18px;
+    line-height: 120%;
+    padding: 8px 0 2px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.commodityPatterntwo li a img {
+    width: 230px;
+    height: 230px;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+.commodityPatterntwo li a.u{
+    margin: auto;
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration:none;
+}
+.commodityPatterntwo li a p{
+    margin: 0;
+}
+.commodityPatterntwo li:hover a img {
+    transform: scale(1.1,1.1);
+}
+/**************** <!-- 时令食材SeasonalIngredients-->************************/
+.SeasonalIngredients {
+    width: 990px;
+    overflow: hidden;
+    margin: 20px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.SeasonalIngredientsone{
+    height: 35px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap{
+    line-height: 30px;
+    font-size: 20px;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap h2{
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap h2.on{
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap h2 a{
+    text-decoration: none;
+    color: #666;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap h2.on a{
+    text-decoration: none;
+    color: #ff6767;
+}
+.SeasonalIngredientsone .SeasonalIngredientsone_wrap .right{
+    float: right;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+.SeasonalIngredientstwo{
+    width: 100%;
+    overflow: hidden;
+}
+.SeasonalIngredientstwo ul{
+    width: 1011px;
+    padding: 10px 0 0 0;
+}
+.SeasonalIngredientstwo li{
+    float: left;
+    margin: 10px 18px 0 0;
+    width: 126px;
+    text-align: center;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.SeasonalIngredientstwo li a{
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+}
+.SeasonalIngredientstwo li img{
+    display: block;
+    margin: 0 0 5px 0;
+    width: 126px;
+    height: 126px;
+}
+.SeasonalIngredientstwo li span {
+    color: #999;
+}
+/****************话题日志TopicLog*****************************/
+.TopicLog{
+    width: 990px;
+    overflow: hidden;
+    margin: 40px 0 0 0;
+    margin: 0 auto;
+}
+.TopicLogone{
+    height: 35px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+.TopicLogone .TopicLogonewrap{
+    line-height: 30px;
+    font-size: 20px;
+}
+.TopicLogone .TopicLogonewrap h3{
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.TopicLog .on{
+    display: block;
+}
+.TopicLogone .TopicLogonewrap h3.on{
+    color: #ff6767;
+    text-decoration: none;
+    border-bottom: 3px solid #ff6767;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+.TopicLogone .TopicLogonewrap h3.on a{
+    text-decoration: none;
+    color: #ff6767;
+}
+.TopicLogone .TopicLogonewrap .right{
+    float: right;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+.TopicLogtwo{
+    padding: 0;
+    margin: 10px 0 0 0;
+    clear: both;
+}
+.TopicLogtwo li{
+    padding: 10px 0;
+    width: 460px;
+    float: left;
+    height: 225px;
+    overflow: hidden;
+}
+.TopicLogtwo div.u {
+    height: 40px;
+}
+.TopicLogtwo div.u a{
+    color: #333;
+    text-decoration: none;
+}
+.TopicLogtwo div.u div {
+    float: left;
+    width: 80%;
+}
+.TopicLogtwo div.u a.t{
+    color: #111;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    max-width: 590px;
+}
+.TopicLogtwo div.u span {
+    color: #666;
+    font-size: 10px;
+    float: left;
+    clear: both;
+}
+.TopicLogtwo div.c {
+    display: block;
+    padding: 5px 0 0 0;
+}
+.TopicLogtwo div.c div.pp a {
+    color: #666;
+    font-size: 14px;
+    max-height: 45px;
+    overflow: hidden;
+}
+.TopicLogtwo div.c a.clear {
+    position: relative;
+    padding: 10px 0 0;
+    float: left;
+}
+.TopicLogtwo div.c a.clear img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+}
+.TopicLogtwo div.c span {
+    clear: both;
+    float: left;
+    padding: 10px 0 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 100%;
+}
+.TopicLogtwo li {
+    padding: 10px 0;
+    width: 460px;
+    float: left;
+    height: 225px;
+    overflow: hidden;
+}
+.TopicLogtwo div.u img.imgLoad{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.TopicLogthree{
+    margin-top: 10px;
+    width: 100%;
+}
+.TopicLogthree ul{
+    display: block;
+    width: 1040px;
+}
+.TopicLogthree li {
+    float: left;
+    margin: 0 23px 0 0;
+    text-align: center;
+    width: 230px;
+    height: 248px;
+    overflow: hidden;
+}
+.TopicLogthree li a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+.TopicLogthree li a i {
+    display: block;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+}
+.TopicLogthree li a img {
+    width: 230px;
+    height: 230px;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+.TopicLogthree li a i, .TopicLogthree li a img {
+     height: 173px;
+ }
+.TopicLogthree li a p {
+    font-size: 18px;
+    line-height: 120%;
+    padding: 8px 0 2px;
+}
+.TopicLogthree li a.u {
+    margin: auto;
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a:hover {
+    color: #ff6767;
+    text-decoration: none;
+}
+#TopicLogthreeul{
+    display: none;
+}
+.TopicLogthree li a p{
+    margin: 0;
+}
+.TopicLogthree li:hover a img {
+    transform: scale(1.1,1.1);
+}
+
+/*/!*********************************!/*/

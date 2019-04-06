@@ -1,0 +1,98 @@
+/*footerInformation页脚外层*/
+.footerInformation{
+    padding: 10px 0;
+}
+.clear{
+    zoom: 1;
+}
+.clear:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.footerInformation a{
+    color: #666;
+}
+.footerInformation a:hover {
+    color: #ff6767;
+}
+/*footerInformation_w 页脚里*/
+.footerInformation .footerInformation_w{
+    padding-top: 10px;
+    border-top:1px solid #e8e8e8;
+}
+/*footerInformation_w 页脚里样式*/
+.footerInformation_w{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*页脚左侧内容*/
+.footerInformation_left{
+    clear: none;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    width: 680px;
+    padding-top: 10px;
+}
+/*左上*/
+.footerInformation_left .footer_l_p{
+    color: #c90;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top:0;
+}
+.footerInformation_left .footer_l_p a{
+    color: #f50;
+}
+/*左中*/
+.footerInformation_left .footer_c_p{
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 6px;
+    margin-top:0;
+}
+/*左下*/
+.footerInformation_left .footer_r_p{
+    margin-bottom: 0;
+    margin-top:0;
+}
+/*页脚中右侧*/
+.footerInformation_conter,.footerInformation_conter{
+    clear: none;
+    float: right;
+    font-size: small;
+    text-align: center;
+
+}
+/*页脚右侧*/
+.footerInformation_right{
+    margin: 0 25px;
+    float: right;
+    font-size: small;
+    text-align: center;
+}
+.footerInformation_w .imgload{
+    display: block;
+    width: 82px;
+    height: 82px;
+    box-sizing:border-box;
+    background-size:10% 10%;
+    background: #fff;
+}
+.footerInformation_conter img{
+    border: 0;
+    vertical-align: middle;
+}
+.footerInformation_right img{
+    border: 0;
+    vertical-align: middle;
+}

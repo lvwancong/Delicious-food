@@ -1,0 +1,134 @@
+.home_index_slider {
+    position: relative;
+    height: 225px;
+    width: 990px;
+    overflow: hidden;
+}
+#home_index_slider {
+     height: 225px;
+     overflow: hidden;
+     position: relative;
+     width: 990px;
+ }
+#home_index_slider ul {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#home_index_slider li {
+    display: block;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    width: 345px;
+    float: left;
+    padding: 0;
+}
+#home_index_slider li a {
+    width: 300px;
+    height: 225px;
+    display: block;
+    float: left;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#home_index_slider li a i {
+    display: block;
+    height: 225px;
+    overflow: hidden;
+    width: 300px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.imgLoad {
+    display: block;
+    background: url("../img/logo/logo.png") no-repeat center center #f8f8f8;
+}
+#home_index_slider li a img {
+    height: 300px;
+    margin-top: -37px;
+    width: 300px;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#home_index_slider li a:hover img {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+/*遮罩层*/
+#home_index_slider li a .os {
+    width: 300px;
+    height: 250px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .2;
+}
+/*文字部分*/
+#home_index_slider li a p {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 26px;
+    line-height: 120%;
+    display: block;
+    width: 240px;
+    padding: 0 30px;
+    height: 75px;
+    margin-top: -30px;
+    text-align: center;
+    z-index: 2;
+}
+#home_index_slider li a p.line2 {
+    font-size: 20px;
+}
+#home_index_slider li a p span {
+    font-size: 12px;
+}
+
+.home_index_slider .nextBtn, .home_index_slider .prevBtn {
+    z-index: 3;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    background-color: #000;
+    opacity: .3;
+    overflow: hidden;
+    text-indent: -9999em;
+    top: 87.5px;
+    left: 0;
+    cursor: pointer;
+}
+.home_index_slider .nextBtn i, .home_index_slider .prevBtn i {
+    display: block;
+    background: url(../img/logo/logo.png) no-repeat;
+    width: 18px;
+    height: 35px;
+    margin: 7px 0 0 11px;
+}
+.home_index_slider .nextBtn {
+    left: auto;
+    right: 0;
+}
+.home_index_slider .nextBtn i {
+    background-position: -18px 0;
+}
+.home_index_slider .nextBtn:hover, .home_index_slider .prevBtn:hover {
+    text-decoration: none;
+    opacity: .7;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}

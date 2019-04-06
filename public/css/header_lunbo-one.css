@@ -1,0 +1,103 @@
+/*<!-- 最外层的大框架 box-->*/
+.TopRotaryMap_box{
+    position: relative;
+    width: 990px;
+    height: 360px;
+    border: 1px solid #ccc;
+    border: 0;
+    margin: 5px auto;
+}
+/*<!-- 用来放图片的容器 inner-->*/
+.TopRotaryMap_box .inner{
+    width: 990px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+/*<!-- 容器 inner中的图片-->*/
+.TopRotaryMap_box .inner img{
+    width: 990px;
+    height: 360px;
+    vertical-align: top;
+}
+/*图片列表*/
+.TopRotaryMap_box .inner ul{
+    width: 10000px;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: 0;
+}
+/*列表li左浮动*/
+.TopRotaryMap_box .inner li{
+    float: left;
+}
+/*选项卡按钮列表*/
+.TopRotaryMap_box ol{
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 5px;
+}
+/*选项卡按钮属性*/
+.TopRotaryMap_box ol li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/*利用js完成颜色的转换*/
+.TopRotaryMap_box ol .current{
+    background-color: #0f0;
+}
+/*左右选项按钮*/
+.TopRotaryMap_box #arr{
+    /*display: none;*/
+}
+/*按钮属性*/
+.TopRotaryMap_box #arr span{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;/*透明度*/
+    user-select: none;/* 文本不可被选中*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/*右按钮*/
+.TopRotaryMap_box #arr #right{
+    right: 0px;
+    top:180px;
+    left: auto;
+}
+.TopRotaryMap_box #arr #right:hover{
+    background-color:#969696;
+}
+/*左按钮*/
+.TopRotaryMap_box #arr #left{
+    left: 220px;
+    top:180px;
+    right: auto;
+}
+.TopRotaryMap_box #arr #left:hover{
+    background-color:#969696;
+}
+/***************************/

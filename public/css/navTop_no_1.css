@@ -1,0 +1,87 @@
+/*************顶部固定导航栏****************/
+/*设置导航div外包属性*/
+.navTop{
+    height: 50px;
+    background: #333;
+    color: #999;
+    top: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    min-width: 990px;
+}
+/*设置下拉框标识符号*/
+.navTop .navTop_drop{
+    width: 0px;
+    margin-top: 20px;
+    border: 5px solid transparent;
+    border-top:10px solid #999;
+    margin-top:18px;
+    margin-left: 30px;
+}
+/*设置ul的列表样式和行高*/
+.navTop ul{
+    list-style: none;/*取消圆点*/
+    line-height: 50px;
+}
+/*设置a的文本装饰为none,文本居中对齐，显示为块*/
+.navTop li a{
+    text-decoration:none;  /*取消下划线*/
+    text-align: center;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #ccc;
+    display: block;
+}
+/*设置一级菜单浮动*/
+.navTop ul li{float: left;}
+/*二级菜单默认为不显示*/
+.navTop ul li ul li{
+    float: none;
+    display: none;
+}
+/*当移动到一级菜单，二级菜单显示*/
+.navTop ul li:hover li{display: block;}
+/*设置a标签背景*/
+.navTop ul li ul li a{
+    background-color: #333;
+    /*display: inline-block;*/
+    /* display: block;*/
+}
+/*设置一级菜单经过时的背景*/
+.navTop ul li a:hover{
+    background-color: #000;
+    color:#fff;
+}
+/*设置二级菜单经过时的背景颜色*/
+.navTop ul li ul li a:hover{
+    background-color: #000;
+}
+/*设置 登录、注册的位置*/
+.navTop ul li .navTop_login,.navTop_register{
+    position: absolute;
+}
+.navTop ul li .navTop_login{
+    right: 10rem;
+}
+.navTop ul li .navTop_register{
+    right: 15rem;
+}
+/*设置logo样式*/
+/*包裹图片的a标签*/
+.navTop ul li .navTop_home_page{
+    display: block;
+    height: 3.1rem;
+    width: 45px;
+    overflow: hidden;
+    background-color: #333;
+}
+/*设置logo样式 因图片过大，所以要限制*/
+.navTop ul li .navTop_home_page img{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+/**************分隔******************/

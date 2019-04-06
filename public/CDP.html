@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/navTop_no_1.css" />
+    <link rel="stylesheet" href="css/navtop_no_2.css" />
+    <link rel="stylesheet" href="css/thesamestyle.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/CDP.css">
+</head>
+<body>
+    <!-- Commodity Details Page -->
+     <!-- 页面顶端的导航窗口-->
+    <div class="navTop">
+        <ul>
+            <li><a id="l1" href="header.html" title="首页" class="navTop_home_page"></a></li>
+            <li><a href="Menu.html" title="菜谱" class="navTop_menu">菜谱</a></li>
+            <li><a href="Ingredients.html" title="食材" class="navTop_ingredients">食材</a></li>
+            <li><a href="JaneChoose.html" title="珍选" class="navTop_screen">珍选</a></li>
+            <li><a href="Healthy.html" title="健康" class="navTop_healthy">健康</a></li>
+            <li><a href="special.html" title="专题" class="navTop_special">专题</a></li>
+            <li><a href="login.html" title="登录" class="navTop_login">登录</a></li>
+            <li><a href="register.html" title="注册" class="navTop_register">注册</a></li>
+        </ul>
+    </div>
+    <!-- 页面内容的头部导航栏-->
+    <div class="w headerNavBar">
+        <!-- logo-->
+        <div class="headerNavBar_inner left">
+            <a id="l2" href="javascript:void(0);" title="美食天下"></a>
+        </div>
+        <!-- 本页名称--刷新作用-->
+        <div class="logo_current left">
+            <h1><a href="javascript:void(0);" title="菜谱">菜谱</a></h1>
+        </div>
+        <!-- 搜索框-->
+        <div class="headerNavBar_search right">
+            <div class="headerNavBar_searchBox">
+                <a id="search" href="javascript:void(0);" title="搜索" class="headerNavBar_searchBtn right">搜索</a>
+                <input type="text" class="headerNavBar_searchText right"/>
+            </div>
+        </div>
+        <!-- 选项列表-->
+        <div class="headerNavBar_nav logo_nav">
+            <a class="headerNavBar_nav_a" href="javascript:void(0);">菜谱首页<i></i><b></b></a>
+            <a class="headerNavBar_nav_a on" href="javascript:void(0);">分类<i></i><b></b></a>
+            <a class="headerNavBar_nav_a" href="javascript:void(0);">菜单<i></i><b></b></a>
+            <a class="headerNavBar_nav_a" href="javascript:void(0);">排行<i></i><b></b></a>
+            <span style="float: left; height:18px; margin:23px 4px 0; border-right: 1px solid #ddd;"></span>
+            <a class="headerNavBar_nav_a" target="_blank" href="javascript:void(0);" title="食材">食材</a>
+            <a class="headerNavBar_nav_a" target="_blank" href="javascript:void(0);" title="食疗食补">食疗食补</a>
+        </div>
+    </div>
+    <!-- 页面内容的头部的子导航栏-->
+    <div class="nav_wrap2">
+        <ul>
+            <li><a href="javascript:void(0);" class="on">首页</a></li>
+            <li><a title="热菜" href="javascript:void(0);">热菜</a></li>
+            <li><a title="凉菜" href="javascript:void(0);">凉菜</a></li>
+            <li><a title="汤羹" href="javascript:void(0);">汤羹</a></li>
+            <li><a title="主食" href="javascript:void(0);">主食</a></li>
+            <li><a title="小吃" href="javascript:void(0);">小吃</a></li>
+            <li><a title="西餐" href="javascript:void(0);">西餐</a></li>
+            <li><a title="烘焙" href="javascript:void(0);">烘焙</a></li>
+            <li><a title="饮品" href="javascript:void(0);">饮品</a></li>
+            <li><a title="零食" href="javascript:void(0);">零食</a></li>
+            <li><a title="泡酱腌菜" href="javascript:void(0);">泡酱腌菜</a></li>
+            <li><a title="自制食材" href="javascript:void(0);">自制食材</a></li>
+            <li><a title="最新菜谱" href="javascript:void(0);">最新菜谱</a></li>
+            <li id="navlist" class="right">
+                <a class="navlist_a" href="javascript:void(0);">浏览全部菜谱
+                    <i></i><b></b>
+                </a>
+                <div id="navlist_sub" style="display: none;">
+                    <div>
+                        <h4>主食/小吃/饮品</h4>
+                        <ul>
+                            <li><a title="米饭" href="javascript:void(0);" target="_blank">米饭</a></li>
+                            <li><a title="炒饭" href="javascript:void(0);" target="_blank">炒饭</a></li>
+                            <li><a title="包子" href="javascript:void(0);" target="_blank">包子</a></li>
+                            <li><a title="饺子" href="javascript:void(0);" target="_blank">饺子</a></li>
+                            <li><a title="馒头花卷" href="javascript:void(0);" target="_blank">馒头花卷</a></li>
+                            <li><a title="面条" href="javascript:void(0);" target="_blank">面条</a></li>
+                            <li><a title="饼" href="javascript:void(0);" target="_blank">饼</a></li>
+                            <li><a title="粥" href="javascript:void(0);" target="_blank">粥</a></li>
+                            <li><a title="冰品" href="javascript:void(0);" target="_blank">冰品</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>场景/饮食方式</h4>
+                        <ul>
+                            <li><a title="早餐" href="javascript:void(0);" target="_blank">早餐</a></li>
+                            <li><a title="快手菜" href="javascript:void(0);" target="_blank">快手菜</a></li>
+                            <li><a title="下午茶" href="javascript:void(0);" target="_blank">下午茶</a></li>
+                            <li><a title="中式宴请" href="javascript:void(0);" target="_blank">中式宴请</a></li>
+                            <li><a title="西式宴请" href="javascript:void(0);" target="_blank">西式宴请</a></li>
+                            <li><a title="夏季食谱" href="javascript:void(0);" target="_blank">夏季食谱</a></li>
+                            <li><a title="高颜值" href="javascript:void(0);" target="_blank">高颜值</a></li>
+                            <li><a title="宿舍时代" href="javascript:void(0);" target="_blank">宿舍时代</a></li>
+                            <li><a title="二人世界" href="javascript:void(0);" target="_blank">二人世界</a></li>
+                            <li><a title="儿童" href="javascript:void(0);" target="_blank">儿童</a></li>
+                            <li><a title="孕妇" href="javascript:void(0);" target="_blank">孕妇</a></li>
+                            <li><a title="产妇" href="javascript:void(0);" target="_blank">产妇</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>中西菜系</h4>
+                        <ul>
+                            <li><a title="川菜" href="javascript:void(0);" target="_blank">川菜</a></li>
+                            <li><a title="鲁菜" href="javascript:void(0);" target="_blank">鲁菜</a></li>
+                            <li><a title="闽菜" href="javascript:void(0);" target="_blank">闽菜</a></li>
+                            <li><a title="粤菜" href="javascript:void(0);" target="_blank">粤菜</a></li>
+                            <li><a title="湘菜" href="javascript:void(0);" target="_blank">湘菜</a></li>
+                            <li><a title="日料" href="javascript:void(0);" target="_blank">日料</a></li>
+                            <li><a title="韩餐" href="javascript:void(0);" target="_blank">韩餐</a></li>
+                            <li><a title="泰国菜" href="javascript:void(0);" target="_blank">泰国菜</a></li>
+                            <li><a title="法国菜" href="javascript:void(0);" target="_blank">法国菜</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>烘焙</h4>
+                        <ul>
+                            <li><a title="面包" href="javascript:void(0);" target="_blank">面包</a></li>
+                            <li><a title="蛋糕" href="javascript:void(0);" target="_blank">蛋糕</a></li>
+                            <li><a title="派塔" href="javascript:void(0);" target="_blank">派塔</a></li>
+                            <li><a title="吐司" href="javascript:void(0);" target="_blank">吐司</a></li>
+                            <li><a title="批萨" href="javascript:void(0);" target="_blank">批萨</a></li>
+                            <li><a title="慕斯" href="javascript:void(0);" target="_blank">慕斯</a></li>
+                            <li><a title="饼干" href="javascript:void(0);" target="_blank">饼干</a></li>
+                            <li><a title="曲奇" href="javascript:void(0);" target="_blank">曲奇</a></li>
+                            <li><a title="布丁" href="javascript:void(0);" target="_blank">布丁</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>常见菜式</h4>
+                        <ul>
+                            <li><a title="热菜" href="javascript:void(0);" target="_blank">热菜</a></li>
+                            <li><a title="凉菜" href="javascript:void(0);" target="_blank">凉菜</a></li>
+                            <li><a title="主食" href="javascript:void(0);" target="_blank">主食</a></li>
+                            <li><a title="小吃" href="javascript:void(0);" target="_blank">小吃</a></li>
+                            <li><a title="汤羹" href="javascript:void(0);" target="_blank">汤羹</a></li>
+                            <li><a title="烘焙" href="javascript:void(0);" target="_blank">烘焙</a></li>
+                            <li><a title="饮品" href="javascript:void(0);" target="_blank">饮品</a></li>
+                            <li><a title="家常菜" href="javascript:void(0);" target="_blank">家常菜</a></li>
+                            <li><a title="开胃菜" href="javascript:void(0);" target="_blank">开胃菜</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>所有菜谱</h4>
+                        <ul>
+                            <li><a title="最新发布" href="javascript:void(0);" target="_blank">最新发布</a></li>
+                            <li><a title="最新推荐" href="javascript:void(0);" target="_blank">最新推荐</a></li>
+                            <li><a title="最热菜谱" href="javascript:void(0);" target="_blank">最热菜谱</a></li>
+                            <li><a title="家常菜谱" href="javascript:void(0);" target="_blank" style="color:#ff6767;">家常菜谱</a></li>
+                        </ul>
+                        <h4>食疗食补</h4>
+                        <ul>
+                            <li><a title="补钙" href="javascript:void(0);" target="_blank">补钙</a></li>
+                            <li><a title="贫血" href="javascript:void(0);" target="_blank">贫血</a></li>
+                            <li><a title="免疫力" href="javascript:void(0);" target="_blank">免疫力</a></li>
+                            <li><a title="养胃" href="javascript:void(0);" target="_blank">养胃</a></li>
+                            <li><a title="对抗雾霾" href="javascript:void(0);" target="_blank">对抗雾霾</a></li>
+                            <li><a title="润肺止咳" href="javascript:void(0);" target="_blank">润肺止咳</a></li>
+                            <li><a title="滋阴" href="javascript:void(0);" target="_blank">滋阴</a></li>
+                            <li><a title="壮阳" href="javascript:void(0);" target="_blank">壮阳</a></li>
+                            <li><a title="失眠" href="javascript:void(0);" target="_blank">失眠</a></li>
+                            <li><a title="养颜" href="javascript:void(0);" target="_blank">养颜</a></li>
+                            <li><a title="排毒" href="javascript:void(0);" target="_blank">排毒</a></li>
+                            <li><a title="便秘" href="javascript:void(0);" target="_blank">便秘</a></li>
+                            <li><a title="瘦身" href="javascript:void(0);" target="_blank">瘦身</a></li>
+                            <li><a title="丰胸" href="javascript:void(0);" target="_blank">丰胸</a></li>
+                            <li><a title="痛经" href="javascript:void(0);" target="_blank">痛经</a></li>
+                            <li><a title="月经不调" href="javascript:void(0);" target="_blank">月经不调</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 页面主体内容 -->
+    <div class="wrap">
+        <div class="w clear">
+            <div class="space_left">
+                <!-- 菜名 -->
+                <div id="space_left_userTop" class="userTop clear"></div>
+                <div class="space_box_home">
+                    <div class="recipDetail">
+                        <!-- 菜的照片 -->
+                        <div class="recipe_De_imgBox" id="recipe_De_imgBox">
+                            <div id="small">
+                                <div id="recipe_De_imgBox_small_img"></div>
+                                <div id="move"></div>
+                            </div>
+                            <div id="big"></div>
+                        </div>
+                        <!-- 评价 -->
+                        <blockquote class="block_txt" id="block_txt">
+                            <div id="block_txt1"></div>
+                        </blockquote>
+                        <!-- 食材 -->
+                        <div id="scmx" class="mo mt20"></div>
+                        <div id="particulars"></div>
+                        <!-- 步骤 -->
+                        <div id="hsrdzfbz" class="mo mt20"></div>
+                        <div id="recipeStep"></div>
+                        <!-- 小窍门 -->
+                        <div id="xqm" class="mo"></div>
+                        <div id="recipeTip" class="recipeTip"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 页面底部的链接窗口-->
+    <!-- 页面底部的信息-->
+    <div class="footerInformation clear">
+        <div class="footerInformation_w">
+            <div class="footerInformation_left">
+                <p class="footer_l_p"><a href="javascript:;" title="美食天下 - 让吃更美好">美食天下 - 让吃更美好</a></p>
+                <p class="footer_c_p">
+                    <a href="AboutUs.html#gywm" title="关于我们">关于我们</a>
+                    <a href="AboutUs.html#lxwm" title="联系我们">联系我们</a>
+                    <a href="AboutUs.html#jrwm" title="加入我们">加入我们</a>
+                    <a href="AboutUs.html#fusm" title="服务声明">服务声明</a>
+                    <a href="javascript:;" title="友情链接">友情链接</a>
+                    <a href="AboutUs.html#wzdt" title="网站导图">网站地图</a>
+                    <a href="javascript:;" title="移动应用">移动应用</a>
+                </p>
+                <p class="footer_r_p">&copy; 2004-2019 美食天下 保留所有权利 - 京ICP证090244号</p>
+            </div>
+            <div class="footerInformation_conter">
+                <img class="imgload" id="qrcode1" src="img/footer/weixin_727.png" title="微信公众号"/>
+                微信公众号
+            </div>
+            <div class="footerInformation_right">
+                <img class="imgload" id="qrcode2" src="img/footer/msc_app.png" title="手机客户端">
+                手机客户端
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部-->
+    <div id="fixed_footer_min" class="fixed-footer fixed-footer-min" style="left: auto; right: 68px; bottom: 10px;">
+        <a href="javascript:;" title="点击返回页面顶部" onclick="window.scrollTo(0,0);" class="fixed-footer-go" style="display: inline;"></a>
+        <!--scrollTo() 方法可把内容滚动到指定的坐标。-->
+    </div>
+</body>
+<script src="js/thesamestyle.js"></script>
+<script src="js-ajax/top_nav-ajax.js"></script>
+<script src="js/body.js"></script>
+<script src="js/CDP.js"></script>
+<script src="js-ajax/CDP-ajax.js"></script>
+</html>

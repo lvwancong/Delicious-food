@@ -1,0 +1,151 @@
+/*<!-- 推荐菜品类别-->*/
+#recipeindex_info {
+    margin: 30px 0 0 0;
+}
+#recipeindex_info_wrap {
+    background: #fff;
+    padding: 10px 0 5px;
+    width: 990px;
+    overflow: hidden;
+}
+.ui_title {
+    height: 35px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+.ui_title_wrap {
+    line-height: 30px;
+    font-size: 20px;
+}
+.ui_title_wrap a {
+    text-decoration: none;
+}
+.ui_title_wrap .right {
+    float: right;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+
+/*<!-- 推荐菜品-->*/
+.big4_list {
+    width: 100%;
+}
+.big4_list ul {
+    display: block;
+    width: 1040px;
+}
+#recipeindex_living ul {
+    display: none;
+}
+#recipeindex_living ul.on {
+    display: block;
+}
+.big4_list li {
+    float: left;
+    margin: 0 23px 0 0;
+    text-align: center;
+    width: 230px;
+    height: 305px;
+    overflow: hidden;
+}
+.big4_list li a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+.big4_list li a.u {
+    margin: auto;
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.big4_list li a span {
+    color: #999;
+}
+.big4_list li a span.copyright {
+    background: #333;
+    background: rgba(0,0,0,.5);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    left: 5px;
+    line-height: 20px;
+    padding: 1px 4px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.big4_list li a span.copyright {
+    background: #333;
+    background: rgba(0,0,0,.5);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    left: 5px;
+    line-height: 20px;
+    padding: 1px 4px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.big4_list li a p {
+    font-size: 18px;
+    line-height: 120%;
+    padding: 8px 0 2px;
+    margin: 0;
+}
+.big4_list li a i {
+    display: block;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+}
+.imgLoad {
+    display: block;
+    background: url("../img/logo/logo.png") no-repeat center center #f8f8f8;
+}
+.big4_list li a img {
+    width: 230px;
+    height: 230px;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.big4_list li:hover a img {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+/******加载更多******/
+.ui-loading {
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+}
+.ui-loading a {
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff6767;
+    background-color: #f8f8f8;
+    outline: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: color .3s ease-in-out .3s,background-color .3s ease-in-out .3s;
+}
+.ui-loading a:hover {
+    background-color: #ff8d8d;
+    color: #fff;
+    text-decoration: none;
+}
+/****************/

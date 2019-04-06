@@ -1,0 +1,132 @@
+/**************分隔******************/
+/*页面内容的头部导航栏*/
+/*导航主体*/
+.headerNavBar{
+    /*overflow: visible; 溢出可见*/
+    overflow: visible;
+    padding-top:50px;
+    height: 65px;
+    width: 990px;
+    margin: auto;
+    /*background-color: #bbd830;*/
+}
+/*设置其导航栏居中对齐*/
+.w {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*图片父元素属性*/
+.headerNavBar .headerNavBar_inner{
+    width: 65px;
+}
+/*包裹图片的a标签*/
+.headerNavBar .headerNavBar_inner a{
+    display: block;
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+    text-decoration: none;
+    /*background-color: #0ff;*/
+}
+/*设置logo样式 因图片过大，所以要限制*/
+.headerNavBar .headerNavBar_inner a img{
+    height: 65px;
+    width: 65px;
+}
+/*搜索栏属性*/
+.headerNavBar .headerNavBar_search{
+    padding-top: 20px;
+}
+/*搜索按钮*/
+.headerNavBar .headerNavBar_search .headerNavBar_searchBtn{
+    border-radius: 0 3px 3px 0;
+    display: block;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-indent: 35px;
+    line-height: 28px;
+    background: #e89aa8 no-repeat scroll 12px center/16px auto;
+}
+/*搜索按钮伪类*/
+.headerNavBar .headerNavBar_search .headerNavBar_searchBtn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6767;
+}
+/*搜索框*/
+.headerNavBar .headerNavBar_search .headerNavBar_searchText{
+    width: 160px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+}
+/*页面头部导航窗口外包裹属性*/
+.headerNavBar_nav{
+    float: right;
+    padding: 0 40px 0 0;
+    height: 60px;
+}
+/*页面头部导航窗口里*/
+.headerNavBar_nav .headerNavBar_nav_a{
+    position: relative;
+    float: left;
+    padding: 0 10px 5px;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.headerNavBar_nav a.on{
+    color: #ff6767;
+}
+/*页面头部导航窗口里鼠标划入*/
+.headerNavBar_nav .headerNavBar_nav_a:hover{
+    color: #ff6767;
+    text-decoration: none;
+}
+.logo_nav a b, .logo_nav a i {
+    display: none;
+}
+.logo_nav a.on i {
+    display: block;
+}
+.logo_nav a.on i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #ff6767;
+}
+.logo_nav a.on b {
+    position: absolute;
+    bottom: -1.3px;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #fff;
+}
+/*/!*首个子元素*!/*/
+/*.headerNavBar_nav .headerNavBar_nav_a:nth-child(1){*/
+    /*color: #ff6767;*/
+    /*text-decoration: none;*/
+/*}*/
+/**********************************************/

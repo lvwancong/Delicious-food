@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		 <meta charset="UTF-8">
+		 <title>注册</title>
+		 <link rel="stylesheet" href="css/body.css"/>
+		 <link rel="stylesheet" href="css/navTop_no_1.css"/>
+		<link rel="stylesheet" href="css/register.css"/>
+	</head>
+	<body onload="navTops()">
+	 <!-- 页面顶端的导航窗口-->
+		 <div class="navTop">
+			 <ul>
+				 <li><a id="l1" href="header.html" title="首页" class="navTop_home_page"></a></li>
+				 <li><a href="Menu.html" title="菜谱" class="navTop_menu">菜谱</a></li>
+				 <li><a href="Ingredients.html" title="食材" class="navTop_ingredients">食材</a></li>
+				 <li><a href="JaneChoose.html" title="珍选" class="navTop_screen">珍选</a></li>
+				 <li><a href="Healthy.html" title="健康" class="navTop_healthy">健康</a></li>
+				 <li><a href="special.html" title="专题" class="navTop_special">专题</a></li>
+				 <li><a href="login.html" title="登录" class="navTop_login">登录</a></li>
+				 <li><a href="register.html" title="注册" class="navTop_register">注册</a></li>
+			 </ul>
+		 </div>
+	 <!--第一层 ，页面主体及其背景-->
+	 <div class="pageContentBodyTwo">
+		 <!--table防止子元素脱离父元素处理-->
+		 <table></table>
+		 <!-- 第二层 包裹的登录窗口-->
+		 <div class="loginBoxTwo">
+			<table>
+				<!-- 1-->
+				<tr>
+					<td colspan="2"><div><h1>欢迎注册</h1></div></td>
+
+					<td colspan="2"><div><a href="login.html" title="直接登录">直接登录</a></div></td>
+
+				</tr>
+				<!-- 2-->
+				<tr>
+					<td>用户名称：</td>
+					<td colspan="2">
+						<div>
+							<input type="text" id="uname" onfocus='shownameone()' onblur='shownametwo()' placeholder="请输入用户名" class="uname" title="请输入用户名">
+						</div>
+					</td>
+
+					<td><span id='msg'></span></td>
+				</tr>
+				<!-- 3-->
+				<tr>
+					<td>用户密码：</td>
+					<td colspan="2">
+						<div>
+							<input type="password" id="upwd" onfocus='showpasswordone()' onblur='showpasswordtwo()' placeholder="请输入密码" title="请输入密码" class="password">
+						</div>
+					</td>
+
+					<td><span id='msg1'></span></td>
+				</tr>
+				<!-- 4-->
+				<tr>
+					<td>用户邮箱：</td>
+					<td colspan="2">
+						<div>
+							<input type="email" id="email" onfocus='showemailone()' onblur='showemailtwo()' placeholder="请输入邮箱" title="请输入邮箱" class="email">
+						</div>
+					</td>
+
+					<td><span id='msg2'></span></td>
+				</tr>
+				<!-- 5-->
+				<tr>
+					<td>联系方式：</td>
+					<td colspan="2">
+						<div>
+							<input type="tel" id="phone" onfocus='showphoneone()' onblur='showphonetwo()' placeholder="请输入手机号码" title="请输入手机号码" class="phone">
+						</div>
+					</td>
+
+					<td><span id='msg3'></span></td>
+				</tr>
+				<!-- 6-->
+				<tr>
+					<td>性别：</td>
+					<td colspan="2">
+						<div>
+							<input type="radio" id="man" name="gender" value="1">
+							<label for="man">男</label>
+							<input type="radio" id="woman" name="gender" value="0">
+							<label for="woman">女</label>
+						</div>
+					</td>
+
+					<td></td>
+				</tr>
+				<!-- 7-->
+				<tr>
+					<td></td>
+					<td colspan="2">
+						<div>
+							<button onclick="register()">提交注册信息</button>
+						</div>
+					</td>
+
+					<td><div id="d1"></div></td>
+				</tr>
+			</table>
+		 </div>
+	 </div>
+	</body>
+	<script src="js-ajax/navTopno1-ajax.js"></script>
+	<script src="js-ajax/register-ajax.js"></script>
+</html>

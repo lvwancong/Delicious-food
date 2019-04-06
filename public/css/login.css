@@ -1,0 +1,92 @@
+/*页面主体及其背景*/
+.pageContentBody{
+    margin: 0 auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: transparent url("../img/background/login.jpg") no-repeat fixed center center;
+    background-size:cover;
+}
+/*包裹的登录窗口*/
+.pageContentBody .loginBox{
+    width: 280px;
+    height: 290px;
+    padding: 2px;
+    background:rgba(0,0,0,0.2);
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+/*表格宽度*/
+.pageContentBody .loginBox table{
+    width: 100%;
+}
+/*登录、密码输入框属性*/
+.pageContentBody .loginBox table input.uname,.pageContentBody .loginBox table input.upwd{
+    width: 100%;
+    height: 36px;
+    border: 0;
+    outline: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+/*标题*/
+.pageContentBody .loginBox table tr:nth-child(1) td:nth-child(1){
+     color: #fff;
+    font-size: 21px;
+}
+/*注册链接*/
+.pageContentBody .loginBox table tr:nth-child(1) td:nth-child(2) a{
+    color: #fff;
+}
+/*分隔符*/
+/* .pageContentBody .loginBox table tr:nth-child(2){ */
+    /*background-color: #ff0;*/
+/* } */
+/*用户名输入框*/
+/* .pageContentBody .loginBox table tr:nth-child(3){ */
+    /*background-color: #f00;*/
+/* } */
+/*账号提示语*/
+.pageContentBody .loginBox table tr:nth-child(4){
+    /*background-color: #00f;*/
+    width: 100%;
+    height: 36px;
+}
+/*密码输入框*/
+/* .pageContentBody .loginBox table tr:nth-child(5){ */
+    /*background-color: #0ff;*/
+/* } */
+/*密码提示语*/
+.pageContentBody .loginBox table tr:nth-child(6){
+    /*background-color: #00f;*/
+    width: 100%;
+    height: 36px;
+}
+/*登录框*/
+.pageContentBody .loginBox table tr:nth-child(7) button{
+    /*background-color: #f0f;*/
+    width: 100%;
+    height: 32px;
+    background-color:#0aa1ed;
+    border: 0;
+    /* 给input去掉轮廓 */
+    outline: 0;
+    margin-top: 8px;
+    color:#fff;
+}
+.pageContentBody .loginBox table tr:nth-child(7) button:hover{
+    border: 1px solid #007bff;
+}
+/*登录提示语*/
+.pageContentBody .loginBox table tr:nth-child(8){
+    /*background-color: #0f0;*/
+    width: 100%;
+    height: 36px;
+    color: red;
+    text-align: center;
+}

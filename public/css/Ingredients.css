@@ -1,0 +1,80 @@
+.category_sub {
+    margin: 0 0 30px 0;
+    width: 100%;
+    overflow: hidden;
+    background: #f8f8f8;
+    position: relative;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.category_sub h3 {
+    float: left;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 186px;
+    color: #666;
+}
+.category_sub ul {
+    width: 804px;
+    float: right;
+    background: #fff;
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+.category_sub li {
+    float: left;
+    position: relative;
+}
+.category_sub a {
+    float: left;
+    height: 70px;
+    line-height: 64px;
+    width: 133px;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.category_sub span {
+    line-height: 20px;
+    position: absolute;
+    bottom: 7px;
+    font-size: 12px;
+    color: #999;
+    width: 100%;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.category_sub a:hover {
+    background: #F8F8F8;
+}
+.category_sub b {
+    float: left;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 18px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 186px;
+    color: #999;
+    display: none;
+}
+.category_sub:hover{
+    display: block;
+}

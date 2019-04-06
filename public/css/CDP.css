@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*菜名*/
+.space_left {
+    width: 640px;
+    float: left;
+    overflow: hidden;
+}
+.userTop {
+    padding: 15px 0 10px 0;
+}
+.userTop h1 {
+    float: left;
+    width: 535px;
+    line-height: 36px;
+    padding: 5px 0 0;
+}
+.userTop a#recipe_title {
+    font-size: 32px;
+    text-decoration: none;
+    color: #333;
+    vertical-align: middle;
+}
+/* 用户头象 */
+.userTop a.uright {
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.userTop img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 2px;
+}
+.userTop .userName {
+    font-size: 12px;
+}
+/* 菜的照片 */
+.recipe_De_imgBox {
+    width: 600px;
+    height: 360px;
+    margin: 10px auto;
+}
+#recipe_De_imgBox #small,
+#recipe_De_imgBox #big {
+    width: 298px;
+    height: 358px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+#recipe_De_imgBox #small {
+    text-align: center;
+    position: relative;
+}
+
+#recipe_De_imgBox #small img {
+    width: 285px;
+    height: 346px;
+    margin: auto;
+    margin-top: 6px;
+}
+
+#recipe_De_imgBox #move {
+    width: 150px;
+    height: 150px;
+    /*background:rgba(255,255,255,.5);*/
+    background: #fff;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+
+#recipe_De_imgBox #big {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+#recipe_De_imgBox #big img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 评价用语 */
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.space_box_home .recipDetail .block_txt {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+.space_box_home .recipDetail .block_txt .txt_tart {
+    text-indent: -10px;
+}
+.space_box_home .recipDetail .block_txt .txt_end,
+.space_box_home .recipDetail .block_txt .txt_tart {
+    font-size: 40px;
+    font-family: 宋体, "Hiragino Sans GB", STHeiti, 微软雅黑, "Microsoft YaHei";
+    color: rgb(191, 191, 191);
+    height: 16px;
+    line-height: 100%;
+    width: 30px;
+    display: inline-block;
+    overflow: hidden;
+}
+/* 材料 */
+.mo {
+    font-size: 20px;
+    color: #ff6767;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 0 20px 35px;
+    background: rgba(0, 0, 0, 0) url("../img/directionOfIndication/yuanquan.png") no-repeat scroll left center;
+}
+.mo * {
+    color: #ff6767;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+.particulars {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 0 0 10px 0;
+    margin: 0 0 15px 0;
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.particulars legend {
+    font-size: 16px;
+    margin: 0 35px;
+    padding: 0 10px;
+}
+.recipeCategory_sub_R {
+    width: 100%;
+}
+.recipeCategory_sub_R ul {
+    display: block;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.particulars .recipeCategory_sub_R ul {
+    border: none;
+}
+.recipeCategory_sub_R li {
+    float: left;
+    width: 159px;
+    text-align: center;
+    height: 70px;
+    position: relative;
+}
+.recipeCategory_sub_R li .category_s1 {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #666;
+}
+.recipeCategory_sub_R li .category_s2 {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.recipeCategory_sub_R li .category_s1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+}
+.recipeCategory_sub_R li .category_s1 a:hover {
+    color: #ff6767;
+}
+b {
+    font-weight: 400;
+}
+.recipeCategory_sub_R li .category_s1 a b:before {
+    content: '';
+    width: 15px;
+    display: inline-block;
+}
+.recipeCategory_sub_R li .category_s1 a b:after {
+    background: rgba(0, 0, 0, 0) url("../img/directionOfIndication/svg02-copy.png") no-repeat scroll 0 0/12px auto;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin: -2px 0 0 4px;
+    vertical-align: middle;
+    width: 12px;
+}
+.recipeCategory_sub_R li .category_s1 a:hover b:after {
+    background: rgba(0, 0, 0, 0) url("../img/directionOfIndication/svg02-copy.png") no-repeat scroll 0 -12px/12px auto;
+}
+/* 步骤 */
+.recipeStep li {
+    display: block;
+    margin: 0 0 40px 0;
+}
+.recipeStep li .recipeStep_img {
+    width: 240px;
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/* 步骤照片 */
+.recipeStep li .recipeStep_img img {
+    width: 220px;
+    /* background: url(//static.meishichina.com/v6/img/lib/load.png) no-repeat scroll center center #f8f8f8; */
+}
+/* 步骤文字 */
+.recipeStep li .recipeStep_word {
+    position: relative;
+    width: 390px;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    font-size: 18px;
+}
+/* 序号属性 */
+.recipeStep_num {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 34px;
+    left: 0;
+    line-height: 34px;
+    position: absolute;
+    text-align: center;
+    top: -44px;
+    width: 34px;
+}
+/* 小窍门 */
+.recipeTip {
+    font-size: 16px;
+}

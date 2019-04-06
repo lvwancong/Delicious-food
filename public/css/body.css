@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, button, code, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, iframe, img, input, label, li, ol, p, pre, select, span, strong, table, tbody, td, textarea, tfoot, th, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6767;
+    text-decoration: underline;
+}
+p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.left{
+     float: left;
+ }
+.right{
+    float: right;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+ol, ul {
+    list-style: none;
+}
+.clear{
+    zoom: 1;
+}
+.clear:after{
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+img{
+    display: block;
+}
+/************返回顶部**************/
+.fixed-footer {
+    position: fixed;
+    bottom: 10px;
+    z-index: 1024;
+    height: 58px;
+}
+.fixed-footer-go {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    display: none;
+    width: 58px;
+    height: 58px;
+}
+.fixed-footer-go, .fixed-footer-weixin {
+    background: url("../img/logo/logo.png") no-repeat scroll center center/58px 58px;
+}
+/*********************************/
+/**自定义标签***/
+b{
+    font-weight: 400;
+}
+i {
+    font-style: normal;/*非斜体*/
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt16 {
+    margin-top: 16px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+
+
+.w {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w {
+     position: relative;
+     top: 0;
+     left: 0;
+}
+.wrap .w {
+     background-color: #fff;
+     padding: 10px 0;
+}
+.ui_title_wrap h1, .ui_title_wrap h2, .ui_title_wrap h3 {
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ui_title_wrap h1.on, .ui_title_wrap h2.on, .ui_title_wrap h3.on {
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+}
+.ui_title_wrap h1 a, .ui_title_wrap h2 a, .ui_title_wrap h3 a {
+    color: #666;
+}
+.ui_title_wrap h1.on a, .ui_title_wrap h2.on a, .ui_title_wrap h3.on a {
+    color: #ff6767;
+}

@@ -1,0 +1,139 @@
+/* 最外层 第一层 */
+.cms_index_slider {
+    position: relative;
+    height: 225px;
+    width: 990px;
+    overflow: hidden;
+}
+/* 第二层 */
+#cms_index_slider {
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    width: 1035px;
+}
+/* 第三层 */
+#cms_index_slider {
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    width: 1035px;
+}
+/* 第四层 容器*/
+#cms_index_slider ul {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+/* 各个照片元素 */
+#cms_index_slider li {
+    display: block;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    width: 345px;
+    margin: 0 0;
+    float: left;
+    padding: 0;
+}
+/* 标签中的 a元素 */
+#cms_index_slider li a {
+    width: 300px;
+    height: 225px;
+    display: block;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+/* a>i */
+#cms_index_slider li a i {
+    display: block;
+    height: 225px;
+    overflow: hidden;
+    width: 300px;
+}
+/* a > i > img */
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.imgLoad {
+    display: block;
+    background: url("../img/logo/logo.png") no-repeat center center #f8f8f8;
+}
+#cms_index_slider li a img {
+    height: 225px;
+    width: 300px;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#cms_index_slider li a:hover img {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+/* a>div */
+#cms_index_slider li a .os {
+    width: 300px;
+    height: 225px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .2;
+}
+/* a>h4 */
+#cms_index_slider li a h4 {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    font-size: 16px;
+    line-height: 120%;
+    display: block;
+    width: 270px;
+    padding: 0 15px;
+    text-align: center;
+    z-index: 2;
+}
+/* 左右按钮 */
+.cms_index_slider .nextBtn, .cms_index_slider .prevBtn {
+    z-index: 3;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    background-color: #000;
+    opacity: .3;
+    overflow: hidden;
+    text-indent: -9999em;
+    top: 87px;
+    left: 0;
+    cursor: pointer;
+}
+.cms_index_slider .nextBtn:hover, .cms_index_slider .prevBtn:hover {
+    text-decoration: none;
+    opacity: .7;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+/* a>i */
+.cms_index_slider .nextBtn i, .cms_index_slider .prevBtn i {
+    display: block;
+    background: url("../img/logo/logo.png") no-repeat;
+    width: 18px;
+    height: 35px;
+    margin: 7px 0 0 11px;
+}
+/* 右 */
+.cms_index_slider .nextBtn {
+    left: auto;
+    right: 0;
+}

@@ -1,0 +1,163 @@
+/* 推荐评论*/
+.space_left {
+    width: 650px;
+    float: left;
+}
+
+.space_left {
+    width: 640px;
+    float: left;
+    overflow: hidden;
+}
+
+input,
+textarea {
+    outline: 0;
+    resize: none;
+}
+
+/* 推荐选项 */
+#zhen_info {
+    margin: 20px 0 0;
+    height: 41px;
+}
+
+#zhen_title_wrap {
+    background: #fff;
+    padding: 0 0 5px;
+    width: 640px;
+}
+
+.ui_title {
+    height: 35px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.ui_title_wrap {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.ui_title_wrap h1,
+.ui_title_wrap h2,
+.ui_title_wrap h3 {
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ui_title_wrap h1.on,
+.ui_title_wrap h2.on,
+.ui_title_wrap h3.on {
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+}
+
+.ui_title_wrap h1 a,
+.ui_title_wrap h2 a,
+.ui_title_wrap h3 a {
+    text-decoration: none;
+}
+
+.ui_title_wrap h1.on a,
+.ui_title_wrap h2.on a,
+.ui_title_wrap h3.on a {
+    color: #ff6767;
+}
+
+/***推荐文字区域**/
+#cms_list_living ul {
+    display: none;
+}
+
+#cms_list_living ul.on {
+    display: block;
+}
+
+.cms_list li {
+    padding: 0 0 20px 0;
+    clear: both;
+}
+
+.cms_list li h4 {
+    font-size: 22px;
+    padding: 3px 0;
+}
+
+.cms_list .pic {
+    float: left;
+    height: 120px;
+    width: 160px;
+    margin: 20px 0 0;
+    overflow: hidden;
+}
+
+.cms_list li.nopic .pic {
+    display: none;
+}
+
+.cms_list li img {
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.cms_list .detail {
+    color: #666;
+    padding: 16px 0 0 180px;
+}
+.cms_list li h4 {
+    font-size: 22px;
+    padding: 3px 0;
+}
+
+.cms_list li.nopic .detail {
+    padding: 16px 0 0 0;
+}
+/* 加载更多 */
+.ui-loading {
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.cms_list .substatus {
+    font-size: 12px;
+    color: #999;
+}
+.cms_list .subcontent {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-loading a {
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff6767;
+    background-color: #f8f8f8;
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+    transition: color .3s ease-in-out .3s, background-color .3s ease-in-out .3s;
+}
